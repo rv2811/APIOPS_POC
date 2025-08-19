@@ -9,6 +9,7 @@ paths:
   /getallmanufacturers:
     get:
       summary: getallmanufacturers
+      description: getallmanufacturers
       operationId: getallmanufacturers
       responses:
         '200':

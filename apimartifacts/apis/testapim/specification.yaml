@@ -10,6 +10,7 @@ paths:
       tags:
         - WeatherForecast
       summary: GetWeatherForecast
+      description: GetWeatherForecast
       operationId: GetWeatherForecast
       responses:
         '200':
@@ -20,9 +21,7 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/WeatherForecast'
-              examples:
-                default:
-                  value: 
+              example: ''
             application/json:
               schema:
                 type: array

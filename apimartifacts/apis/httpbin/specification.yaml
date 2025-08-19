@@ -9,6 +9,7 @@ paths:
   /route:
     get:
       summary: test
+      description: test
       operationId: test
       responses:
         '200':

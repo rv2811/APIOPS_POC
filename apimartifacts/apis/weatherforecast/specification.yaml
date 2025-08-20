@@ -1,0 +1,28 @@
+openapi: 3.0.1
+info:
+  title: weatherforecast
+  description: ''
+  version: '1.0'
+servers:
+  - url: https://apimanagement-qa-service.azure-api.net/weatherforecast
+paths:
+  /weatherforecast:
+    get:
+      summary: getweatherdetails
+      operationId: getweatherdetails
+      responses:
+        '200':
+          description: ''
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]
